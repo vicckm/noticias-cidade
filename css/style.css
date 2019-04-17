@@ -1,0 +1,130 @@
+/*Estrutura do site*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #fff url(../img/fundo.png) repeat-x;
+}
+
+#container {
+	width: 760px; /* Antes era 720px. Tive que fazer a alteração dessa largura, pois o detalhe estava perto demais do menu.*/
+	margin: 0 auto;
+}
+
+#topo {
+	height: 150px;
+	background: url(../img/detalhe-topo.png) no-repeat right top;
+	padding-top: 25px;
+}
+
+.logo {
+	width: 152px;
+	height: 66px;
+	background: url(../img/logo.png) no-repeat center;
+	text-indent: -10000px;
+}
+/*Barra de navegação*/
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#topo ul {
+	margin-top: 30px;
+	background: #b10333;
+	float: left;
+}
+
+#topo ul li {
+	float: left;
+}
+
+#topo ul a {
+	font-size: 0.9em;
+	display: block;
+	padding: 0.5em 1.5em;
+	line-height: 2.1em;
+	text-decoration: none;
+	color: #fff;
+	background: url(../img/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a {
+	background: none;
+}
+
+#topo ul a:hover {
+	color: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil, 
+body.internacional #navegacao a#internacional,
+body.fotos #navegacao a#fotos {
+	color: #fff;
+	background: #de003e;
+	cursor: text;
+}
+
+/*Configura layout de 3 colunas*/
+#conteudo {
+	margin-top: 60px;
+	background: #f5f5f5;
+}
+
+#uma-coluna #primario {
+	width: 760px;
+	float: left;
+	margin: 0 0 20px 0px;  
+	background: blue;    
+}
+
+#duas-colunas #primario {
+	width: 560px; /* Chegou a esta conclusão, pois somou as duas colunas e acrescentou a metade do espaçamento (270*2 + 20) */
+	float: left;
+	margin: 0 0 20px 200px;  
+	background: blue;    
+}
+
+
+
+#lateral {
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -760px;
+	background: red;
+}
+
+#primario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 200px;  /* O que aconteceu aqui: para que a lateral fique no lado esquerdo foi necessário utilizar a tag margin para direcionar os elementos flutuantes. No lado esquerdo ficou 200px porque somou 180px (que é o lado da lateral) com a metade (20) do total (40) da largura do container, ou seja, 180px + 20px. */
+	background: blue;        /*Para fazer o calculo de cada largura do conteudo foi necessário somar as duas colunas que terão a mesma largura (270), com o total somou com 180 e depois diminuiu com o total da largura do container (760px). Nisso, o que sobrou foi o total do espaçamento que poderá ter para distanciar as colunas uma das outras. */
+}
+
+
+#secundario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 20px;
+	background: pink;
+}
+
+/*Rodapé*/
+
+#container-rodape {
+	background: #294c71;
+	padding: 20px;
+}
+
+#rodape {
+	width: 760px;
+	margin: 0 auto;
+	color: #fff;
+}
