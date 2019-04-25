@@ -29,6 +29,15 @@ body {
 }
 /*Barra de navegação*/
 
+a:link, a:visited {
+	color: #b10333;
+	padding: 2px;
+}
+
+a:hover {
+	color: #e50040;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -81,15 +90,13 @@ body.fotos #navegacao a#fotos {
 #uma-coluna #primario {
 	width: 760px;
 	float: left;
-	margin: 0 0 20px 0px;  
-	background: blue;    
+	margin: 0 0 20px 0px;     
 }
 
 #duas-colunas #primario {
 	width: 560px; /* Chegou a esta conclusão, pois somou as duas colunas e acrescentou a metade do espaçamento (270*2 + 20) */
 	float: left;
-	margin: 0 0 20px 200px;  
-	background: blue;    
+	margin: 0 0 20px 200px;   
 }
 
 
@@ -98,14 +105,13 @@ body.fotos #navegacao a#fotos {
 	width: 180px;
 	float: left;
 	margin: 0 0 20px -760px;
-	background: red;
 }
 
 #primario {
 	width: 270px;
 	float: left;
 	margin: 0 0 20px 200px;  /* O que aconteceu aqui: para que a lateral fique no lado esquerdo foi necessário utilizar a tag margin para direcionar os elementos flutuantes. No lado esquerdo ficou 200px porque somou 180px (que é o lado da lateral) com a metade (20) do total (40) da largura do container, ou seja, 180px + 20px. */
-	background: blue;        /*Para fazer o calculo de cada largura do conteudo foi necessário somar as duas colunas que terão a mesma largura (270), com o total somou com 180 e depois diminuiu com o total da largura do container (760px). Nisso, o que sobrou foi o total do espaçamento que poderá ter para distanciar as colunas uma das outras. */
+    /*Para fazer o calculo de cada largura do conteudo foi necessário somar as duas colunas que terão a mesma largura (270), com o total somou com 180 e depois diminuiu com o total da largura do container (760px). Nisso, o que sobrou foi o total do espaçamento que poderá ter para distanciar as colunas uma das outras. */
 }
 
 
@@ -113,7 +119,126 @@ body.fotos #navegacao a#fotos {
 	width: 270px;
 	float: left;
 	margin: 0 0 20px 20px;
-	background: pink;
+}
+
+/*Caixa*/
+
+.caixa {
+	margin: 10px 0;
+	padding: 5px 0 5px 0;
+	background: #f3f3f3 url(../img/fundo-caixa.png);
+}
+
+h2 {
+	font-size: 1.1em;
+	background: #294c71;
+	color: #fff;
+	padding: 5px;
+}
+
+.caixa-conteudo {
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+/*Formatar menus laterais*/
+
+#lateral ul a {
+	font-size: 0.9em;
+	padding: 3px;
+	display: block;
+	line-height: 30px;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+	background: #f9f9f9 url(../img/marcador.png) no-repeat left center;
+	padding-left: 20px;
+	color: #a1a1a1;
+}
+
+/*Formatando formulários*/
+
+label {
+	display: block;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+input {
+	padding: 5px;
+	width: 125px;
+	font-size: 0.9em;
+	background-color: #fff;
+}
+
+input.submit {
+	width: 80px;
+	color: #fff;
+	background-color: #b10333;
+	border: 2px solid #870529;
+	margin-top: 5px;
+}
+
+/*Formatando imagens */
+
+img.imagem-principal {
+	width: 98%;
+	border: 3px solid #dfdfdf;
+}
+
+/*Formatando cabeçalhos*/
+
+h3 {
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.destaque h3 {
+	background: #b10333;
+	color: #fff;
+}
+
+.entrevista h3 {
+	background: #de003e;
+}
+
+/*Formatando lista de notícias*/
+
+#lista-noticias li {
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 62px;
+}
+
+#lista-noticias li a img {
+	float: left;
+	margin: 5px;
+}
+
+#lista-noticias li a {
+	text-decoration: none;
+}
+
+#lista-noticias li a h3 {
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+}
+
+#lista-noticias li a p {
+	font-size: 0.7em;
+	color: #000;
+}
+
+#lista-noticias li:hover {
+	background: #eee;
+	cursor: pointer;
 }
 
 /*Rodapé*/

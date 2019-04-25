@@ -6,8 +6,13 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
-	<body class="brasil">
+	<body id="duas-colunas" class="brasil"> 
+
+		<!-- Início /container -->
+
 		<div id="container">
+
+			<!-- Início /topo -->
 			<div id="topo">
 				<h1 class="logo">Notícias cidade</h1>
 				<ul id="navegacao">
@@ -32,7 +37,134 @@
 					</li>
 				</ul>
 			</div>
+			<!-- Fim /topo -->
+
+			<div id="conteudo"><!-- Inicio /conteudo -->
+				<!-- Criou-se as div's assim por causa da acessibilidade -->
+				<!-- Início /primário -->
+				<div id="primario">
+
+					<div class="caixa destaque">
+						<h2>Destaque</h2>
+						<div class="caixa-conteudo">
+							<h3>Nova Legislação</h3>
+							<img class="imagem-principal" src="img/taxi.jpg" width="100%">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							</p>
+							<a href="">Leia mais!</a>
+						</div>
+					</div>
+
+					<div class="caixa">
+						<h2>Mundo</h2>
+						<div class="caixa-conteudo">
+							
+						<ul id="lista-noticias">
+							<li>
+								<a href="">
+									<img src="img/tecnologia.jpg" width="80">
+									<h3>Novas tecnologias!</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									</p>
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									<img src="img/tecnologia.jpg" width="80">
+									<h3>Novas tecnologias!</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									</p>
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									<img src="img/tecnologia.jpg" width="80">
+									<h3>Novas tecnologias!</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									</p>
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									<img src="img/tecnologia.jpg" width="80">
+									<h3>Novas tecnologias!</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									</p>
+								</a>
+							</li>
+						</ul>
+
+						</div>
+					</div>
+
+				</div>
+				<!-- Fim /primário -->
+				
+
+				<!-- Início /lateral -->
+				<div id="lateral">
+				
+					<div class="caixa">
+						<h2>Entrevistas</h2>
+						<div class="caixa-conteudo">
+							<ul>
+								<li><a href="">José Almeida</a></li>
+								<li><a href="">Felipe Silva</a></li>
+								<li><a href="">Renato Rodrigues</a></li>
+								<li><a href="">Abelardo Silveira</a></li>
+								<li><a href="">André Carlos</a></li>
+								<li><a href="">Márcio Mello</a></li>
+								<li><a href="">João Pedro</a></li>
+								<li><a href="">Fernando Weiss</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="caixa">
+						<h2>News</h2>
+						<div class="caixa-conteudo">
+							
+							<form>
+
+								<div>
+									<label for="email">E-mail:</label>
+									<input type="text" name="email" id="email" placeholder="E-mail">
+								</div>
+
+								<div>
+									<input class="submit" type="submit" value="Cadastrar">
+								</div>
+							</form>
+
+						</div>
+					</div>
+
+				</div>
+				<!-- Fim /lateral -->
+
+			</div>
+			<!-- Fim /conteudo -->
+
+		</div> 
+		<!-- Fim /container -->
+
+
+		<!-- Início /rodape -->
+		<div id="container-rodape" style="clear: both;">
+			<div id="rodape">
+				&copy; Copyright 2000 - 2019 Notícias Cidade
+			</div>
 		</div>
+		<!-- Fim /rodape -->
+
 	</body>
 
 </html>
